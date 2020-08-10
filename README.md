@@ -32,11 +32,11 @@ $ pyver add python3
 python version added successfully!
 ```
 
-Note: The python version you are adding must be properly installed (in /usr/bin/)
+Note: The python version you are adding must be properly installed (in `/usr/bin/`)
 
 ### Set
 
-Once you have your python versions added as alternatives, you can switch to them at any time by using `set`
+Once you have your python versions added as alternatives, you can switch to them at any time by using `set` (requires root)
 
 ``` sh
 $ sudo pyver set python3

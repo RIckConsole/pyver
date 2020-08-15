@@ -7,7 +7,7 @@ pyver makes switching between python versions simple!
 If you have your go environment setup correctly you can use this one-liner:
 
 ``` sh
-go get github.com/RIckConsole/pyvar && cd ~/go/src/github.com/RIckConsole/pyvar && go install
+go get github.com/RIckConsole/pyver && cd ~/go/src/github.com/RIckConsole/pyvar && go install
 ```
 
 ## Usage

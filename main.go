@@ -27,7 +27,7 @@ func main() {
 }
 
 func checkver(){
-       cmd, err := exec.Command("bash", "-c", "update-alternatives --get-selections | grep python | awk '{print $3}'").Output()
+       cmd, err := exec.Command("bash", "-c", "update-alternatives --get-selections | grep python | grep 'python.*python' | awk '{print $3}'").Output()
        //cmd, err := exec.Command("python", "--version").Output()
        if err != nil {
               log.Fatal(err)

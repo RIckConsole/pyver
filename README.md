@@ -2,6 +2,8 @@
 
 pyver makes switching between python versions simple!
 
+pyver will help you easliy set the `python` binary to whichever python version you have installed
+
 ## Installation
 
 If you have your go environment setup correctly you can use this one-liner:

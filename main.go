@@ -20,6 +20,8 @@ func main() {
               switchver(os.Args[2])
               case "add":
               addver(os.Args[2])
+              case "list":
+              list()
               default:
               fmt.Println(usage)
        }
@@ -57,4 +59,15 @@ func addver(version string){
        } else {
               fmt.Print(stdout)
        }
+}
+
+func list(){
+       fmt.Println("Python versions you are able to switch to:\n")
+       cmd, err := exec.Command("bash", "-c", "update-alternatives --list python").Output()
+       if err != nil {
+              log.Fatal(err)
+       }
+       fmt.Print(string(cmd))
+       fmt.Print("\nNot seeing a certain version? Consider adding it as an alternative using:\n")
+       fmt.Print("pyver add <python version>\n")
 }

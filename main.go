@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-       usage := "Usage: pyver <set/check/add> <version>"
+       usage := "Usage: pyver <add/set/check/list> <version>"
        if (len(os.Args) < 2) {
               fmt.Println(usage)
               os.Exit(0)

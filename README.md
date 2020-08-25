@@ -1,6 +1,6 @@
 # pyver
 
-pyver makes switching between python versions simple!
+pyver makes use of update-alternatives to make python versions simple!
 
 pyver will help you easliy set the `python` binary to whichever python version you have installed
 
@@ -14,7 +14,7 @@ go get github.com/RIckConsole/pyver && cd ~/go/src/github.com/RIckConsole/pyvar 
 
 ## Usage
 
-pyvar has 3 functions, `set`, `check`, and `add`
+pyvar has 4 functions, `set`, `check`, `add`, and `list`
 
 ### Check
 
@@ -43,4 +43,12 @@ Once you have your python versions added as alternatives, you can switch to them
 ``` sh
 $ sudo pyver set python3
 Python version switched to: python3
+```
+
+### List 
+
+If you are unsure which python versions you have added as alternatives, you can use the list function to view them:
+
+``` sh
+$ pyver list
 ```
